@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.movielist_parent {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.card_parent {
+  width: 250px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid grey; */
+  margin: auto;
+  border-radius: 0.5rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+  .movie_banner {
+    padding: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: auto;
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+  }
+}
+
+.rating_parent {
+  display: flex;
+  gap: 1rem;
+  padding: 0.3rem;
+}
+
+.rating_parent > div:first-child {
+  color: grey;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+}
+
+.rating_parent > div:nth-child(2) {
+  color: rgb(95, 126, 184);
+}
+
+.movie_name {
+  color: rgb(61, 60, 60);
+  padding: 0.3rem 0.5rem;
+}
+
+.movie_msg {
+  white-space: nowrap;
+  max-width: 200px;
+  padding: 0.3rem 0.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* height: 100px; */
+}
+
+.date {
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: rgb(207, 205, 205);
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* search box */
+
+.search_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.search_btn {
+  padding: 0.4rem 0.7rem;
+  outline: none;
+  border: none;
+  background-color: rgb(168, 133, 201);
+  color: white ;
+  font-weight: bold;
+  border-radius: 0.5rem;
+
+}
+
+input {
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(168, 133, 201);
+}
+
+.search_parent {
+  font-size: 1.5rem;
+}
+
+/* heading */
+
+.heading{
+  color: rgb(168, 133, 201);
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+/* query search */
+
+.query_search{
+  padding: 1rem;
+ 
+}
+
+.query_search input {
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  text-align: center;
+  border: 2px solid rgb(168, 133, 201);
+}
